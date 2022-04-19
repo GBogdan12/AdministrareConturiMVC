@@ -1,0 +1,117 @@
+﻿@model Licenta.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="~/Content/login.css" rel="stylesheet" />
+
+
+@section Scripts1 {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@{
+    Layout = null;
+
+
+}
+
+
+@using (Html.BeginForm("Create", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <body>
+        <div class="container">
+            <header>
+                <h1>Aplicatie Licenta 2022</h1>
+            </header>
+            <div id="container_demo">
+                <section>
+                    @if (Request.IsAuthenticated && User.IsInRole("Administrator"))
+                    {
+                        <div id="wrapper">
+                            <div id="register">
+                                <form action="mysuperscript.php" autocomplete="on">
+                                    <h1> Adauga Angajati </h1>
+                                    <p>
+                                        <label for="emailsignup" class="youmail"> Email</label>
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    </p>
+                                    <p>
+                                        <label for="passwordsignup" class="youpasswd">Parola Temporara </label>
+                                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                    </p>
+                                    <p>
+                                        <label for="passwordsignup_confirm" class="youpasswd">Confirma Parola Temporara </label>
+                                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                                    </p>
+                                    <p class="signin button">
+                                        <input type="submit" class="btn btn-default" value="Create" />
+                                    </p>
+                                    <p class="change_link">
+                                        @Html.ActionLink("   Home", "Index", "Home", null, new { @class = "glyphicon glyphicon-home" })
+                                        @Html.ActionLink("   Angajati", "Index", "Angajati", null, new { @class = "glyphicon glyphicon-user" })
+                                    </p>
+                                    <p class="alert-success" style="margin-block-start:80px"> 
+                                        
+                                        @if (TempData.ContainsKey("AdaugaUtilizator"))
+                                        {
+                                            
+                                                @Html.Raw(TempData["AdaugaUtilizator"])
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            
+                                            @section Scripts {
+                                                <script>
+                                                    $('#mesaj').fadeTo(2000, 500)
+                                                        .slideUp(500, function () {
+                                                            $('#mesaj').remove();
+                                                        });
+                                                </script>
+                                            }
+                                        }
+
+
+
+
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                    }
+                    else
+                    {
+                        <div id="wrapper">
+                            <div id="register">
+                                <form action="mysuperscript.php" autocomplete="on">
+                                    <h1> Doar Administratorii pot creea conturi! </h1>
+                                </form>
+                                <p class="change_link">
+                                    Ai cont de administrator?
+
+                                    @Html.ActionLink("Login", "Login")
+                                </p>
+                            </div>
+                        </div>
+                    }
+
+                </section>
+            </div>
+        </div>
+    </body>
+}
+
+
+}

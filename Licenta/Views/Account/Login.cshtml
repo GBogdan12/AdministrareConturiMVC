@@ -1,0 +1,99 @@
+﻿@using Licenta.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Logare";
+    Layout = null;
+}
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="~/Content/login.css" rel="stylesheet" />
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<div class="container">
+
+    <header>
+        <h1>Aplicatie Licenta 2022</h1>
+
+    </header>
+    <section id="loginForm">
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div id="container_demo">
+                <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+
+                <div id="wrapper">
+                   
+                    <div id="login" class="animate form">
+                        <form action="mysuperscript.php" autocomplete="on">
+                            <h1>@ViewBag.Title</h1>
+                            @Html.ValidationSummary(true, "", new { @class = "alert-danger" })
+                            <p>
+                                <label for="username" class="uname"> Email </label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd"> Parola </label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </p>
+                            <p class="keeplogin">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </p>
+                            <p class="login button">
+                                <input type="submit" value="Log in" class="btn btn-default" />
+                            </p>
+
+                            <p class="change_link">
+                                Nu esti administrator?
+                                @Html.ActionLink("înregistrează-te!", "Register")
+                            </p>
+
+                            <p class="alert-success" style="margin-block-start:80px">
+
+                                @if (TempData.ContainsKey("AdaugaUtilizator"))
+                                {
+
+                                    @Html.Raw(TempData["AdaugaUtilizator"])
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+                                    @section Scripts1 {
+                                        <script>
+                                            $('#mesaj').fadeTo(2000, 500)
+                                                .slideUp(500, function () {
+                                                    $('#mesaj').remove();
+                                                });
+                                        </script>
+                                    }
+                                }
+
+
+
+
+                            </p>
+
+
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        }
+    </section>
+</div>
+

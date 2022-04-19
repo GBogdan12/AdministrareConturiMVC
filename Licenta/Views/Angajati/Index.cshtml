@@ -1,0 +1,142 @@
+﻿@model IEnumerable<Licenta.Models.UserD>
+@{
+
+    ViewBag.Title = "Index";
+    var i = 1;
+}
+@using Microsoft.AspNet.Identity;
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Adauga Angajat", "Create", "Account")
+</p>
+<table class="table table-striped" style="width:90%">
+    <thead>
+        <tr>
+            <th scope="col">
+                #
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Nume)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Prenume)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.CNP)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Oras)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Judet)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Adresa)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Company.Denumire) Companie
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.AspNetUser.Email)
+            </th>
+            <th>Rol</th>
+            <th>Optiuni</th>
+
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        if (item.AspNetUser.SefId != null)
+        {
+            if (User.IsInRole("Administrator") && item.SefIdD==item.AspNetUser.SefId)
+            {
+                <tr>
+                    <th scope="row">@i
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nume)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prenume)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CNP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Oras)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Judet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adresa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.Denumire)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+                    </td>
+                    <td></td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                    @{
+                        i = i + 1;
+                    }
+
+
+                    </th>
+                </tr>
+
+            }
+        }
+        else
+        {
+            if (item.SefIdD == User.Identity.GetUserId())
+            {
+                <tr>
+                    <th scope="row">@i
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nume)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prenume)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CNP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Oras)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Judet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adresa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.Denumire)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                    @{
+                        i = i + 1;
+                    }
+
+
+                    </th>
+                </tr>
+            }
+        }
+    }
+
+</table>

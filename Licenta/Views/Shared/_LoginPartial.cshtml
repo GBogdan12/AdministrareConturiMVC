@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.Owin;
+@{
+    Layout = null;
+}
+@if (Request.IsAuthenticated)
+{
+
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-left, navbar-bottom" }))
+    {
+        @Html.AntiForgeryToken()
+        var roleCurent = "-?-";
+        if (Roles.IsUserInRole("Administrator"))
+        {
+            roleCurent = "-Administrator-";
+        }
+        else if (Roles.IsUserInRole("Angajat"))
+        {
+            roleCurent = "-Angajat-";
+        }
+
+        <div>@Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" }) </div>
+        <div> @roleCurent </div>
+        <div style="margin-block:10px;">
+            <button type="button" class="btn btn-danger btn-sm" style="margin:5px;" onclick="javascript:document.getElementById('logoutForm').submit()">Deloghează-te</button>
+            <button type="button" class="btn btn-success btn-sm"style="margin: 5px;">@Html.ActionLink("Detalii Cont", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", style = "color: white" })</button>
+            
+        </div>
+            }
+}
+else
+{
+    <div> @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</div>
+    <div>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</div>
+}

@@ -1,0 +1,128 @@
+﻿@model Licenta.Models.Dosar
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Dosar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumePart1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumePart1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumePart2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumePart2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDosar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDosar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stadiu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stadiu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Obiect)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Obiect)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Complet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Complet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actualizare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actualizare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataUrmatoareSedinta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataUrmatoareSedinta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipSolutie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipSolutie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumarDosar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumarDosar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City.Denumire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.Denumire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company.Denumire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company.Denumire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TribunalD.Nume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TribunalD.Nume)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Denumire" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="IdJudet" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Dosars" Relationship="Self.FK_Dosar_City" FromRole="City" ToRole="Dosar" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Oras_Judet" FromRole="City" ToRole="Countries" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Denumire" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CUI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NrRegCom" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Sediu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dosars" Relationship="Self.FK_Dosar_Company" FromRole="Company" ToRole="Dosar" />
+    <NavigationProperty Name="UserDs" Relationship="Self.FK_User_Detaliu_Companie" FromRole="Company" ToRole="UserD" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Denumire" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_Oras_Judet" FromRole="Countries" ToRole="City" />
+  </EntityType>
+  <EntityType Name="Dosar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NumePart1" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="NumePart2" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="IdTribunal" Type="Int32" />
+    <Property Name="DataDosar" Type="DateTime" Precision="0" />
+    <Property Name="Stadiu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Obiect" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Complet" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Actualizare" Type="DateTime" Precision="0" />
+    <Property Name="DataUrmatoareSedinta" Type="DateTime" Precision="0" />
+    <Property Name="TipSolutie" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Companie" Type="Int32" />
+    <Property Name="OrasId" Type="Int32" />
+    <Property Name="NumarDosar" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Dosar_City" FromRole="Dosar" ToRole="City" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Dosar_Company" FromRole="Dosar" ToRole="Company" />
+    <NavigationProperty Name="TribunalD" Relationship="Self.FK_Dosar_TribunalD" FromRole="Dosar" ToRole="TribunalD" />
+    <NavigationProperty Name="DUs" Relationship="Self.FK_DU_Dosar1" FromRole="Dosar" ToRole="DU" />
+  </EntityType>
+  <EntityType Name="DU">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="DosarId" Type="Int32" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dosar" Relationship="Self.FK_DU_Dosar1" FromRole="DU" ToRole="Dosar" />
+    <NavigationProperty Name="UserD" Relationship="Self.FK_DU_UserD" FromRole="DU" ToRole="UserD" />
+  </EntityType>
+  <EntityType Name="TribunalD">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nume" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Dosars" Relationship="Self.FK_Dosar_TribunalD" FromRole="TribunalD" ToRole="Dosar" />
+  </EntityType>
+  <EntityType Name="UserD">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanieId" Type="Int32" />
+    <Property Name="Nume" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_User_Detaliu_Companie" FromRole="UserD" ToRole="Company" />
+    <NavigationProperty Name="DUs" Relationship="Self.FK_DU_UserD" FromRole="UserD" ToRole="DU" />
+    <NavigationProperty Name="AspNetUser" Relationship="Models.FK_UserD_AspNetUsers" FromRole="UserD" ToRole="AspNetUser" />
+    <Property Name="Prenume" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CNP" Type="String" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Name="Oras" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Judet" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Adresa" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Name="SefIdD" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Dosar_City">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Dosar" Type="Self.Dosar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dosar">
+        <PropertyRef Name="OrasId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oras_Judet">
+    <End Role="Countries" Type="Self.Country" Multiplicity="1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="IdJudet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dosar_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dosar" Type="Self.Dosar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dosar">
+        <PropertyRef Name="Companie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Detaliu_Companie">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="UserD" Type="Self.UserD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserD">
+        <PropertyRef Name="CompanieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dosar_TribunalD">
+    <End Role="TribunalD" Type="Self.TribunalD" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dosar" Type="Self.Dosar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TribunalD">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dosar">
+        <PropertyRef Name="IdTribunal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DU_Dosar1">
+    <End Role="Dosar" Type="Self.Dosar" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DU" Type="Self.DU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dosar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DU">
+        <PropertyRef Name="DosarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DU_UserD">
+    <End Role="UserD" Type="Self.UserD" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DU" Type="Self.DU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserD">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DU">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbLicentaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Dosars" EntityType="Self.Dosar" />
+    <EntitySet Name="DUs" EntityType="Self.DU" />
+    <EntitySet Name="TribunalDs" EntityType="Self.TribunalD" />
+    <EntitySet Name="UserDs" EntityType="Self.UserD" />
+    <AssociationSet Name="FK_Dosar_City" Association="Self.FK_Dosar_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Dosar" EntitySet="Dosars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oras_Judet" Association="Self.FK_Oras_Judet">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dosar_Company" Association="Self.FK_Dosar_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Dosar" EntitySet="Dosars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Detaliu_Companie" Association="Self.FK_User_Detaliu_Companie">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="UserD" EntitySet="UserDs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dosar_TribunalD" Association="Self.FK_Dosar_TribunalD">
+      <End Role="TribunalD" EntitySet="TribunalDs" />
+      <End Role="Dosar" EntitySet="Dosars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DU_Dosar1" Association="Self.FK_DU_Dosar1">
+      <End Role="Dosar" EntitySet="Dosars" />
+      <End Role="DU" EntitySet="DUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DU_UserD" Association="Self.FK_DU_UserD">
+      <End Role="UserD" EntitySet="UserDs" />
+      <End Role="DU" EntitySet="DUs" />
+    </AssociationSet>
+    <EntitySet Name="C__MigrationHistory" EntityType="Models.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Models.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Models.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Models.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Models.AspNetUser" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Models.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Models.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserD_AspNetUsers" Association="Models.FK_UserD_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="UserD" EntitySet="UserDs" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Models.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Models.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Models.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Models.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Models.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Models.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="UserD" Relationship="Models.FK_UserD_AspNetUsers" FromRole="AspNetUser" ToRole="UserD" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Models.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+    <Property Name="SefId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="Models.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Models.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="Models.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Models.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserD_AspNetUsers">
+    <End Type="Models.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Models.UserD" Role="UserD" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserD">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="Models.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="Models.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+</Schema>

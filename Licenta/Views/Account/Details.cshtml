@@ -1,0 +1,79 @@
+﻿@model Licenta.Models.UserD
+
+@{
+    ViewBag.Title = "Detalii";
+}
+
+<h2>@ViewBag.Title Cont personal</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal" style="position:absolute; width:100%">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prenume)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prenume)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Oras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Judet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Judet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company.Denumire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company.Denumire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.Email)
+        </dd>
+
+           <button class="button">@Html.ActionLink("Edit", "ManageDetails", new { id = Model.Id })</button>
+    </dl>
+</div>

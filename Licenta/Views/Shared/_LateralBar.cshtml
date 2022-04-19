@@ -1,0 +1,66 @@
+﻿
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+@Styles.Render("~/bundles/lateralbar")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+
+<div class="navbar-left, navbar-fixed"
+         <div class="row profile">
+             <div class="col-md-3">
+                 <div class="profile-sidebar">
+                     <!-- SIDEBAR USERPIC -->
+                     <div class="profile-usertitle">
+                         @Html.ActionLink("Aplicatie Licenta 2022", "Index", "Home", null, new { @style = "font-size:200%" })
+                     </div>
+                     <!-- END SIDEBAR USERPIC -->
+                     <!-- SIDEBAR USER TITLE -->
+                     <div class="profile-usertitle">
+                         <div class="profile-usertitle-name">
+                             @Html.Partial("_LoginPartial")
+                         </div>
+                     </div>
+                     <!-- END SIDEBAR USER TITLE -->
+                     <!-- SIDEBAR BUTTONS -->
+                     <div class="profile-userbuttons">
+                     </div>
+                     <!-- END SIDEBAR BUTTONS -->
+                     <!-- SIDEBAR MENU -->
+
+                             <div class="sidebar">
+                                 @if (Request.IsAuthenticated && User.IsInRole("Administrator"))
+                                 {
+                                     <div class="profile-usermenu">
+                                         <ul class="glyphicon glyphicon-cog">   ADMINISTRATOR</ul>
+                                         <ul class="nav">
+                                             <li>
+                                                 @Html.ActionLink("   Adauga Angajati", "Create", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "glyphicon glyphicon-plus" })
+                                                 @Html.ActionLink("   Angajati", "Index", "Angajati", null, new { @class = "glyphicon glyphicon-user" })
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 }
+                                 <div class="profile-usermenu">
+                                     <ul class="glyphicon glyphicon-cog">   Cont Personal</ul>
+                                     <ul class="nav">
+                                         <li>
+                                             <!-- @Html.ActionLink("   Info cont", "Manage","Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "glyphicon glyphicon-plus" })-->
+                                             <!-- @Html.ActionLink("   Angajati", "Index", "Angajati", null, new { @class = "glyphicon glyphicon-user" })-->
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+
+                             <!-- END MENU -->
+
+
+
+                     </div>
+
+                 </div>
+    </div>
+
+
+
+
+

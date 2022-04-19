@@ -1,0 +1,264 @@
+E:\Licenta\Licenta\Licenta\bin\Licenta.dll.config
+E:\Licenta\Licenta\Licenta\bin\Licenta.dll
+E:\Licenta\Licenta\Licenta\bin\Licenta.pdb
+E:\Licenta\Licenta\Licenta\bin\roslyn\csc.exe
+E:\Licenta\Licenta\Licenta\bin\roslyn\csc.exe.config
+E:\Licenta\Licenta\Licenta\bin\roslyn\csc.rsp
+E:\Licenta\Licenta\Licenta\bin\roslyn\csi.exe
+E:\Licenta\Licenta\Licenta\bin\roslyn\csi.rsp
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.AppContext.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.Collections.Immutable.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.IO.FileSystem.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\System.Reflection.Metadata.dll
+E:\Licenta\Licenta\Licenta\bin\roslyn\vbc.exe
+E:\Licenta\Licenta\Licenta\bin\roslyn\vbc.exe.config
+E:\Licenta\Licenta\Licenta\bin\roslyn\vbc.rsp
+E:\Licenta\Licenta\Licenta\bin\roslyn\VBCSCompiler.exe
+E:\Licenta\Licenta\Licenta\bin\roslyn\VBCSCompiler.exe.config
+E:\Licenta\Licenta\Licenta\bin\Antlr3.Runtime.dll
+E:\Licenta\Licenta\Licenta\bin\EntityFramework.dll
+E:\Licenta\Licenta\Licenta\bin\EntityFramework.SqlServer.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Google.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Web.Infrastructure.dll
+E:\Licenta\Licenta\Licenta\bin\Newtonsoft.Json.dll
+E:\Licenta\Licenta\Licenta\bin\Owin.dll
+E:\Licenta\Licenta\Licenta\bin\System.Net.Http.Formatting.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Helpers.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Http.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Http.WebHost.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Mvc.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Optimization.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Razor.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.Deployment.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.Razor.dll
+E:\Licenta\Licenta\Licenta\bin\WebGrease.dll
+E:\Licenta\Licenta\Licenta\bin\System.Web.Helpers.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.Mvc.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.Optimization.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.Razor.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.Deployment.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.WebPages.Razor.xml
+E:\Licenta\Licenta\Licenta\bin\Newtonsoft.Json.xml
+E:\Licenta\Licenta\Licenta\bin\Antlr3.Runtime.pdb
+E:\Licenta\Licenta\Licenta\bin\System.Net.Http.Formatting.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.Http.xml
+E:\Licenta\Licenta\Licenta\bin\System.Web.Http.WebHost.xml
+E:\Licenta\Licenta\Licenta\bin\EntityFramework.xml
+E:\Licenta\Licenta\Licenta\bin\EntityFramework.SqlServer.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Google.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Licenta\Licenta\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Licenta\Licenta\Licenta\obj\Debug\Licenta.csproj.CoreCompileInputs.cache
+E:\Licenta\Licenta\Licenta\obj\Debug\Licenta.dll
+E:\Licenta\Licenta\Licenta\obj\Debug\Licenta.pdb
+E:\Licenta\Licenta\Licenta\obj\Debug\Licenta.csproj.AssemblyReference.cache
+E:\Licenta\Licenta - Copy\Licenta\bin\Licenta.dll.config
+E:\Licenta\Licenta - Copy\Licenta\bin\Licenta.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Licenta.pdb
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\csc.exe
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\csc.exe.config
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\csc.rsp
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\csi.exe
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\csi.rsp
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.AppContext.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.Collections.Immutable.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.IO.FileSystem.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\System.Reflection.Metadata.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\vbc.exe
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\vbc.exe.config
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\vbc.rsp
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\VBCSCompiler.exe
+E:\Licenta\Licenta - Copy\Licenta\bin\roslyn\VBCSCompiler.exe.config
+E:\Licenta\Licenta - Copy\Licenta\bin\Antlr3.Runtime.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\EntityFramework.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\EntityFramework.SqlServer.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Google.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Web.Infrastructure.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Newtonsoft.Json.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\Owin.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Net.Http.Formatting.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Helpers.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Http.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Http.WebHost.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Mvc.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Optimization.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Razor.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.Deployment.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.Razor.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\WebGrease.dll
+E:\Licenta\Licenta - Copy\Licenta\bin\EntityFramework.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\EntityFramework.SqlServer.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Google.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Helpers.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Mvc.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Optimization.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Razor.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.Deployment.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.WebPages.Razor.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Newtonsoft.Json.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Antlr3.Runtime.pdb
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Net.Http.Formatting.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Http.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\System.Web.Http.WebHost.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Licenta\Licenta - Copy\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Licenta\Licenta - Copy\Licenta\obj\Debug\Licenta.csproj.AssemblyReference.cache
+E:\Licenta\Licenta - Copy\Licenta\obj\Debug\Licenta.csproj.CoreCompileInputs.cache
+E:\Licenta\Licenta - Copy\Licenta\obj\Debug\Licenta.dll
+E:\Licenta\Licenta - Copy\Licenta\obj\Debug\Licenta.pdb
+E:\Licenta\Licenta - backup\Licenta\bin\Licenta.dll.config
+E:\Licenta\Licenta - backup\Licenta\bin\Licenta.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Licenta.pdb
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\csc.exe
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\csc.exe.config
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\csc.rsp
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\csi.exe
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\csi.rsp
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.AppContext.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.Collections.Immutable.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.IO.FileSystem.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\System.Reflection.Metadata.dll
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\vbc.exe
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\vbc.exe.config
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\vbc.rsp
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\VBCSCompiler.exe
+E:\Licenta\Licenta - backup\Licenta\bin\roslyn\VBCSCompiler.exe.config
+E:\Licenta\Licenta - backup\Licenta\bin\Antlr3.Runtime.dll
+E:\Licenta\Licenta - backup\Licenta\bin\EntityFramework.dll
+E:\Licenta\Licenta - backup\Licenta\bin\EntityFramework.SqlServer.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Google.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Web.Infrastructure.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Newtonsoft.Json.dll
+E:\Licenta\Licenta - backup\Licenta\bin\Owin.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Net.Http.Formatting.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Helpers.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Http.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Http.WebHost.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Mvc.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Optimization.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Razor.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.Deployment.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.dll
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.Razor.dll
+E:\Licenta\Licenta - backup\Licenta\bin\WebGrease.dll
+E:\Licenta\Licenta - backup\Licenta\bin\EntityFramework.xml
+E:\Licenta\Licenta - backup\Licenta\bin\EntityFramework.SqlServer.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Google.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Helpers.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Mvc.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Optimization.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Razor.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.Deployment.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.WebPages.Razor.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Newtonsoft.Json.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Antlr3.Runtime.pdb
+E:\Licenta\Licenta - backup\Licenta\bin\System.Net.Http.Formatting.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Http.xml
+E:\Licenta\Licenta - backup\Licenta\bin\System.Web.Http.WebHost.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Licenta\Licenta - backup\Licenta\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Licenta\Licenta - backup\Licenta\obj\Debug\Licenta.csproj.AssemblyReference.cache
+E:\Licenta\Licenta - backup\Licenta\obj\Debug\Licenta.csproj.CoreCompileInputs.cache
+E:\Licenta\Licenta - backup\Licenta\obj\Debug\Licenta.dll
+E:\Licenta\Licenta - backup\Licenta\obj\Debug\Licenta.pdb

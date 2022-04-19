@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Licenta.Models.Dosar>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NumePart1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumePart2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataDosar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stadiu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Obiect)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Complet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actualizare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataUrmatoareSedinta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipSolutie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumarDosar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City.Denumire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company.Denumire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TribunalD.Nume)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumePart1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumePart2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataDosar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stadiu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Obiect)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Complet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actualizare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataUrmatoareSedinta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipSolutie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumarDosar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City.Denumire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.Denumire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TribunalD.Nume)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
